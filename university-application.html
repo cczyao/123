@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>俄罗斯院校申请 - 俄罗斯留学网</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .application-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            padding: 150px 10% 80px;
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .application-content {
+            padding: 4rem 10%;
+        }
+        
+        .service-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .feature-card {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-card i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .application-process {
+            background: var(--light-bg);
+            padding: 4rem 10%;
+        }
+        
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .step-card {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: var(--primary-color);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-weight: bold;
+        }
+        
+        .materials-section {
+            padding: 4rem 10%;
+        }
+        
+        .materials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .material-card {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+        }
+        
+        .material-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .service-packages {
+            background: var(--light-bg);
+            padding: 4rem 10%;
+        }
+        
+        .package-card {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .package-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .package-price {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin: 1rem 0;
+        }
+        
+        .package-features {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+        
+        .package-features li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .package-features i {
+            color: var(--accent-color);
+        }
+        
+        .choose-button {
+            background: var(--primary-color);
+            color: var(--white);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: var(--transition);
+            width: 100%;
+        }
+        
+        .choose-button:hover {
+            background: var(--secondary-color);
+        }
+        
+        .success-cases {
+            padding: 4rem 10%;
+        }
+        
+        .case-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .case-card {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+        }
+        
+        .case-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        
+        .case-info {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><i class="fas fa-graduation-cap"></i> 俄罗斯留学网</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#about">关于我们</a></li>
+                <li><a href="index.html#services">留学服务</a></li>
+                <li><a href="index.html#universities">院校信息</a></li>
+                <li><a href="index.html#contact">联系我们</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="application-header">
+        <h1>俄罗斯院校申请服务</h1>
+        <p>专业团队助您顺利申请心仪院校</p>
+    </section>
+
+    <section class="application-content">
+        <h2 data-aos="fade-up">服务特色</h2>
+        <div class="service-features">
+            <div class="feature-card" data-aos="fade-up">
+                <i class="fas fa-check-circle"></i>
+                <h3>申请材料准备</h3>
+                <ul>
+                    <li>材料清单指导</li>
+                    <li>文件翻译公证</li>
+                    <li>材料格式规范</li>
+                    <li>材料完整性检查</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-file-alt"></i>
+                <h3>文书写作指导</h3>
+                <ul>
+                    <li>个人陈述修改</li>
+                    <li>推荐信指导</li>
+                    <li>简历优化</li>
+                    <li>作品集指导</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-user-check"></i>
+                <h3>申请全程跟进</h3>
+                <ul>
+                    <li>申请进度追踪</li>
+                    <li>邮件往来辅助</li>
+                    <li>补充材料指导</li>
+                    <li>录取结果跟进</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="application-process">
+        <h2 data-aos="fade-up">申请流程</h2>
+        <div class="process-steps">
+            <div class="step-card" data-aos="fade-up">
+                <div class="step-number">1</div>
+                <h3>背景评估</h3>
+                <p>评估学术背景、语言能力、申请优势</p>
+            </div>
+            
+            <div class="step-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="step-number">2</div>
+                <h3>院校选择</h3>
+                <p>根据评估结果推荐适合的院校和专业</p>
+            </div>
+            
+            <div class="step-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="step-number">3</div>
+                <h3>材料准备</h3>
+                <p>准备申请材料，包括翻译和公证</p>
+            </div>
+            
+            <div class="step-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="step-number">4</div>
+                <h3>提交申请</h3>
+                <p>按时提交申请材料，跟进申请进度</p>
+            </div>
+            
+            <div class="step-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="step-number">5</div>
+                <h3>录取确认</h3>
+                <p>确认录取结果，协助办理入学手续</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="materials-section">
+        <h2 data-aos="fade-up">申请材料</h2>
+        <div class="materials-grid">
+            <div class="material-card" data-aos="fade-up">
+                <h3><i class="fas fa-file-alt"></i> 基础材料</h3>
+                <ul>
+                    <li>护照扫描件</li>
+                    <li>高中/大学毕业证书</li>
+                    <li>成绩单</li>
+                    <li>语言成绩证明</li>
+                </ul>
+            </div>
+            
+            <div class="material-card" data-aos="fade-up" data-aos-delay="100">
+                <h3><i class="fas fa-pen"></i> 文书材料</h3>
+                <ul>
+                    <li>个人陈述</li>
+                    <li>推荐信</li>
+                    <li>个人简历</li>
+                    <li>研究计划（研究生）</li>
+                </ul>
+            </div>
+            
+            <div class="material-card" data-aos="fade-up" data-aos-delay="200">
+                <h3><i class="fas fa-plus-circle"></i> 补充材料</h3>
+                <ul>
+                    <li>获奖证书</li>
+                    <li>实习证明</li>
+                    <li>作品集（艺术类）</li>
+                    <li>发表论文（研究生）</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-packages">
+        <h2 data-aos="fade-up">申请套餐</h2>
+        <div class="service-features">
+            <div class="package-card" data-aos="fade-up">
+                <h3>基础申请套餐</h3>
+                <div class="package-price">¥15,800</div>
+                <ul class="package-features">
+                    <li><i class="fas fa-check"></i> 申请3所院校</li>
+                    <li><i class="fas fa-check"></i> 基础材料指导</li>
+                    <li><i class="fas fa-check"></i> 文书修改1次</li>
+                    <li><i class="fas fa-check"></i> 申请进度跟进</li>
+                </ul>
+                <button class="choose-button">选择套餐</button>
+            </div>
+            
+            <div class="package-card" data-aos="fade-up" data-aos-delay="100">
+                <h3>精英申请套餐</h3>
+                <div class="package-price">¥25,800</div>
+                <ul class="package-features">
+                    <li><i class="fas fa-check"></i> 申请5所院校</li>
+                    <li><i class="fas fa-check"></i> 深度材料指导</li>
+                    <li><i class="fas fa-check"></i> 文书修改3次</li>
+                    <li><i class="fas fa-check"></i> 申请全程跟进</li>
+                    <li><i class="fas fa-check"></i> 面试辅导</li>
+                </ul>
+                <button class="choose-button">选择套餐</button>
+            </div>
+            
+            <div class="package-card" data-aos="fade-up" data-aos-delay="200">
+                <h3>VIP申请套餐</h3>
+                <div class="package-price">¥35,800</div>
+                <ul class="package-features">
+                    <li><i class="fas fa-check"></i> 申请不限院校数量</li>
+                    <li><i class="fas fa-check"></i> 一对一专属顾问</li>
+                    <li><i class="fas fa-check"></i> 文书无限次修改</li>
+                    <li><i class="fas fa-check"></i> 申请全程管家服务</li>
+                    <li><i class="fas fa-check"></i> 深度面试辅导</li>
+                    <li><i class="fas fa-check"></i> 入学后续服务</li>
+                </ul>
+                <button class="choose-button">选择套餐</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="success-cases">
+        <h2 data-aos="fade-up">成功案例</h2>
+        <div class="case-grid">
+            <div class="case-card" data-aos="fade-up">
+                <div class="case-content">
+                    <h3>张同学</h3>
+                    <p>成功申请莫斯科国立大学计算机科学专业</p>
+                    <div class="case-info">
+                        <p><strong>背景：</strong>本科211院校计算机专业</p>
+                        <p><strong>录取结果：</strong>全额奖学金录取</p>
+                        <p><strong>申请用时：</strong>3个月</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="case-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="case-content">
+                    <h3>李同学</h3>
+                    <p>成功申请圣彼得堡国立大学经济学专业</p>
+                    <div class="case-info">
+                        <p><strong>背景：</strong>本科普通一本经济学专业</p>
+                        <p><strong>录取结果：</strong>直接录取</p>
+                        <p><strong>申请用时：</strong>2.5个月</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="case-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="case-content">
+                    <h3>王同学</h3>
+                    <p>成功申请新西伯利亚国立大学物理学专业</p>
+                    <div class="case-info">
+                        <p><strong>背景：</strong>本科985院校物理专业</p>
+                        <p><strong>录取结果：</strong>优先录取</p>
+                        <p><strong>申请用时：</strong>2个月</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>联系方式</h3>
+                <div class="footer-contact">
+                    <p><i class="fas fa-phone"></i> +86 13007699901</p>
+                    <p><i class="fas fa-envelope"></i> cczyao@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 河南省安阳市文峰区广厦新苑</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 俄罗斯留学网 版权所有</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html> 

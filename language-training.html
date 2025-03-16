@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>俄语语言培训 - 俄罗斯留学网</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .language-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            padding: 150px 10% 80px;
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .course-section {
+            padding: 4rem 10%;
+        }
+        
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .course-card {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .price-tag {
+            background: var(--accent-color);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 1rem 0;
+        }
+        
+        .schedule-section {
+            background: var(--light-bg);
+            padding: 4rem 10%;
+        }
+        
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .schedule-table th, .schedule-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .schedule-table th {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+        
+        .enroll-section {
+            padding: 4rem 10%;
+            text-align: center;
+        }
+        
+        .enroll-button {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 1rem 3rem;
+            border-radius: 5px;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .enroll-button:hover {
+            background: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><i class="fas fa-graduation-cap"></i> 俄罗斯留学网</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#about">关于我们</a></li>
+                <li><a href="index.html#services">留学服务</a></li>
+                <li><a href="index.html#universities">院校信息</a></li>
+                <li><a href="index.html#contact">联系我们</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="language-header">
+        <h1>专业俄语培训课程</h1>
+        <p>从零基础到高级水平，为您的留学之路打下坚实的语言基础</p>
+    </section>
+
+    <section class="course-section">
+        <h2 data-aos="fade-up">课程体系</h2>
+        <div class="course-grid">
+            <div class="course-card" data-aos="fade-up">
+                <i class="fas fa-book"></i>
+                <h3>基础课程</h3>
+                <ul>
+                    <li>零基础入门班</li>
+                    <li>日常会话训练</li>
+                    <li>基础语法巩固</li>
+                    <li>音标发音纠正</li>
+                </ul>
+                <div class="price-tag">¥3,800/月</div>
+                <p>适合零基础学习者，打造扎实的语言基础</p>
+            </div>
+            
+            <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>强化课程</h3>
+                <ul>
+                    <li>高级语法精讲</li>
+                    <li>词汇量扩充</li>
+                    <li>口语表达进阶</li>
+                    <li>写作技巧提升</li>
+                </ul>
+                <div class="price-tag">¥4,800/月</div>
+                <p>适合具备基础的学习者，提升语言应用能力</p>
+            </div>
+            
+            <div class="course-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-award"></i>
+                <h3>考试辅导</h3>
+                <ul>
+                    <li>俄语等级考试</li>
+                    <li>留学入学考试</li>
+                    <li>专业术语培训</li>
+                    <li>模拟考试训练</li>
+                </ul>
+                <div class="price-tag">¥5,800/月</div>
+                <p>针对性备考，提高考试通过率</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="schedule-section">
+        <h2 data-aos="fade-up">课程安排</h2>
+        <table class="schedule-table" data-aos="fade-up">
+            <tr>
+                <th>课程类型</th>
+                <th>课时安排</th>
+                <th>班级人数</th>
+                <th>上课方式</th>
+            </tr>
+            <tr>
+                <td>基础课程</td>
+                <td>每周3次，每次2小时</td>
+                <td>6-8人小班</td>
+                <td>线下/线上</td>
+            </tr>
+            <tr>
+                <td>强化课程</td>
+                <td>每周4次，每次2.5小时</td>
+                <td>4-6人小班</td>
+                <td>线下/线上</td>
+            </tr>
+            <tr>
+                <td>考试辅导</td>
+                <td>每周5次，每次3小时</td>
+                <td>3-4人小班</td>
+                <td>线下为主</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="enroll-section">
+        <h2 data-aos="fade-up">立即报名</h2>
+        <p data-aos="fade-up">开启您的俄语学习之旅</p>
+        <button class="enroll-button" data-aos="fade-up">在线报名</button>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>联系方式</h3>
+                <div class="footer-contact">
+                    <p><i class="fas fa-phone"></i> +86 13007699901</p>
+                    <p><i class="fas fa-envelope"></i> cczyao@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 河南省安阳市文峰区广厦新苑</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 俄罗斯留学网 版权所有</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        document.querySelector('.enroll-button').addEventListener('click', function() {
+            window.location.href = 'index.html#contact';
+        });
+    </script>
+</body>
+</html> 

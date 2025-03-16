@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>俄罗斯签证办理 - 俄罗斯留学网</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .visa-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            padding: 150px 10% 80px;
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .visa-content {
+            padding: 4rem 10%;
+        }
+        
+        .visa-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .visa-card {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .visa-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .price-list {
+            background: var(--light-bg);
+            padding: 4rem 10%;
+        }
+        
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .price-table th, .price-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .price-table th {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+        
+        .notice-section {
+            padding: 4rem 10%;
+            background: var(--white);
+        }
+        
+        .notice-card {
+            background: var(--light-bg);
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .notice-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .process-section {
+            padding: 4rem 10%;
+            background: var(--light-bg);
+        }
+        
+        .process-timeline {
+            margin-top: 2rem;
+            position: relative;
+            padding-left: 50px;
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding-bottom: 2rem;
+            padding-left: 2rem;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -35px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--primary-color);
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: -25px;
+            top: 20px;
+            width: 2px;
+            height: calc(100% - 20px);
+            background: var(--primary-color);
+        }
+        
+        .timeline-item:last-child::after {
+            display: none;
+        }
+        
+        .materials-section {
+            padding: 4rem 10%;
+        }
+        
+        .materials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .material-card {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+        
+        .material-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .material-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .material-card ul li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .material-card ul li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><i class="fas fa-graduation-cap"></i> 俄罗斯留学网</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#about">关于我们</a></li>
+                <li><a href="index.html#services">留学服务</a></li>
+                <li><a href="index.html#universities">院校信息</a></li>
+                <li><a href="index.html#contact">联系我们</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="visa-header">
+        <h1>俄罗斯签证办理服务</h1>
+        <p>专业团队，一站式签证办理服务</p>
+    </section>
+
+    <section class="visa-content">
+        <h2 data-aos="fade-up">服务内容</h2>
+        <div class="visa-grid">
+            <div class="visa-card" data-aos="fade-up">
+                <i class="fas fa-file-alt"></i>
+                <h3>材料准备指导</h3>
+                <ul>
+                    <li>资料清单提供</li>
+                    <li>材料填写指导</li>
+                    <li>材料翻译服务</li>
+                    <li>材料公证服务</li>
+                </ul>
+            </div>
+            
+            <div class="visa-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-comments"></i>
+                <h3>面签辅导</h3>
+                <ul>
+                    <li>面签流程讲解</li>
+                    <li>常见问题演练</li>
+                    <li>着装礼仪指导</li>
+                    <li>模拟面试训练</li>
+                </ul>
+            </div>
+            
+            <div class="visa-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-tasks"></i>
+                <h3>全程代办</h3>
+                <ul>
+                    <li>预约使馆面签</li>
+                    <li>材料递交代办</li>
+                    <li>进度实时跟踪</li>
+                    <li>签证取回服务</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="price-list">
+        <h2 data-aos="fade-up">收费标准</h2>
+        <table class="price-table" data-aos="fade-up">
+            <tr>
+                <th>服务项目</th>
+                <th>服务内容</th>
+                <th>价格</th>
+                <th>周期</th>
+            </tr>
+            <tr>
+                <td>基础套餐</td>
+                <td>材料准备指导 + 资料审核</td>
+                <td>¥2,800</td>
+                <td>5-7个工作日</td>
+            </tr>
+            <tr>
+                <td>标准套餐</td>
+                <td>基础套餐 + 面签辅导</td>
+                <td>¥3,800</td>
+                <td>7-10个工作日</td>
+            </tr>
+            <tr>
+                <td>全程代办</td>
+                <td>标准套餐 + 全程代办服务</td>
+                <td>¥4,800</td>
+                <td>10-15个工作日</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="process-section">
+        <h2 data-aos="fade-up">办理流程</h2>
+        <div class="process-timeline">
+            <div class="timeline-item" data-aos="fade-up">
+                <h3>初步咨询</h3>
+                <p>了解客户需求，提供签证方案建议</p>
+            </div>
+            <div class="timeline-item" data-aos="fade-up">
+                <h3>确定方案</h3>
+                <p>选择合适的签证类型和服务套餐</p>
+            </div>
+            <div class="timeline-item" data-aos="fade-up">
+                <h3>材料准备</h3>
+                <p>按清单准备材料，进行翻译公证</p>
+            </div>
+            <div class="timeline-item" data-aos="fade-up">
+                <h3>资料审核</h3>
+                <p>专业顾问审核所有申请材料</p>
+            </div>
+            <div class="timeline-item" data-aos="fade-up">
+                <h3>面签准备</h3>
+                <p>预约面签时间，进行面签辅导</p>
+            </div>
+            <div class="timeline-item" data-aos="fade-up">
+                <h3>签证获取</h3>
+                <p>递交材料，等待审批，取回护照</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="materials-section">
+        <h2 data-aos="fade-up">所需材料</h2>
+        <div class="materials-grid">
+            <div class="material-card" data-aos="fade-up">
+                <h4><i class="fas fa-passport"></i> 基础材料</h4>
+                <ul>
+                    <li>护照原件（有效期不少于18个月）</li>
+                    <li>护照尺寸照片（3.5×4.5cm白底）</li>
+                    <li>身份证复印件</li>
+                    <li>户口本复印件</li>
+                </ul>
+            </div>
+            <div class="material-card" data-aos="fade-up" data-aos-delay="100">
+                <h4><i class="fas fa-file-alt"></i> 学习材料</h4>
+                <ul>
+                    <li>录取通知书原件</li>
+                    <li>学校邀请函</li>
+                    <li>最高学历公证书</li>
+                    <li>在读证明（如适用）</li>
+                </ul>
+            </div>
+            <div class="material-card" data-aos="fade-up" data-aos-delay="200">
+                <h4><i class="fas fa-money-check"></i> 财务材料</h4>
+                <ul>
+                    <li>银行存款证明</li>
+                    <li>资金来源证明</li>
+                    <li>担保人收入证明</li>
+                    <li>房产证明（如有）</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="notice-section">
+        <h2 data-aos="fade-up">注意事项</h2>
+        <div class="notice-card" data-aos="fade-up">
+            <h3><i class="fas fa-exclamation-circle"></i> 材料要求</h3>
+            <ul>
+                <li>所有材料必须是原件或公证件</li>
+                <li>俄文翻译件需要公证认证</li>
+                <li>照片必须是近3个月内拍摄</li>
+                <li>银行存款证明金额不低于12万元</li>
+            </ul>
+        </div>
+        <div class="notice-card" data-aos="fade-up">
+            <h3><i class="fas fa-clock"></i> 时间安排</h3>
+            <ul>
+                <li>建议提前2-3个月开始准备材料</li>
+                <li>公证翻译约需7-10个工作日</li>
+                <li>使馆审理时间约为10个工作日</li>
+                <li>高峰期可能需要更长处理时间</li>
+            </ul>
+        </div>
+        <div class="notice-card" data-aos="fade-up">
+            <h3><i class="fas fa-info-circle"></i> 特别提醒</h3>
+            <ul>
+                <li>签证有效期从批准之日算起</li>
+                <li>首次入境时间不得晚于签发日期30天</li>
+                <li>建议购买签证保险</li>
+                <li>保持通讯畅通，以便及时处理问题</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>联系方式</h3>
+                <div class="footer-contact">
+                    <p><i class="fas fa-phone"></i> +86 13007699901</p>
+                    <p><i class="fas fa-envelope"></i> cczyao@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 河南省安阳市文峰区广厦新苑</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 俄罗斯留学网 版权所有</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html> 

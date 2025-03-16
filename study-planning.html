@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留学规划服务 - 俄罗斯留学网</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .planning-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            padding: 150px 10% 80px;
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .planning-content {
+            padding: 4rem 10%;
+        }
+        
+        .assessment-section {
+            background: var(--light-bg);
+            padding: 4rem 10%;
+        }
+        
+        .assessment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .assessment-card {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .assessment-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .assessment-card i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .timeline-section {
+            padding: 4rem 10%;
+            position: relative;
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background: var(--primary-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background: var(--white);
+            border: 4px solid var(--primary-color);
+            border-radius: 50%;
+            top: 15px;
+            z-index: 1;
+        }
+        
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+        
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+        
+        .timeline-item:nth-child(even)::after {
+            left: -16px;
+        }
+        
+        .timeline-content {
+            padding: 20px;
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        .timeline-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .service-packages {
+            background: var(--light-bg);
+            padding: 4rem 10%;
+        }
+        
+        .package-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .package-card {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .package-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .package-price {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin: 1rem 0;
+        }
+        
+        .package-features {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+        
+        .package-features li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .package-features i {
+            color: var(--accent-color);
+        }
+        
+        .choose-button {
+            background: var(--primary-color);
+            color: var(--white);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: var(--transition);
+            width: 100%;
+        }
+        
+        .choose-button:hover {
+            background: var(--secondary-color);
+        }
+        
+        @media screen and (max-width: 768px) {
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+            
+            .timeline-item::after {
+                left: 15px;
+            }
+            
+            .timeline-item:nth-child(even)::after {
+                left: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><i class="fas fa-graduation-cap"></i> 俄罗斯留学网</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#about">关于我们</a></li>
+                <li><a href="index.html#services">留学服务</a></li>
+                <li><a href="index.html#universities">院校信息</a></li>
+                <li><a href="index.html#contact">联系我们</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="planning-header">
+        <h1>专业留学规划服务</h1>
+        <p>为您量身定制最适合的留学方案</p>
+    </section>
+
+    <section class="planning-content">
+        <h2 data-aos="fade-up">服务介绍</h2>
+        <p data-aos="fade-up">我们提供专业的俄罗斯留学规划服务，帮助您制定清晰的留学目标和实施路径。通过全面评估您的学术背景、职业规划和个人兴趣，为您量身定制最适合的留学方案。</p>
+    </section>
+
+    <section class="assessment-section">
+        <h2 data-aos="fade-up">专业评估</h2>
+        <div class="assessment-grid">
+            <div class="assessment-card" data-aos="fade-up">
+                <i class="fas fa-user-graduate"></i>
+                <h3>学术背景评估</h3>
+                <ul>
+                    <li>学历成绩评估</li>
+                    <li>专业匹配度分析</li>
+                    <li>语言能力评估</li>
+                    <li>学术优势分析</li>
+                </ul>
+            </div>
+            
+            <div class="assessment-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-chart-line"></i>
+                <h3>职业发展评估</h3>
+                <ul>
+                    <li>职业目标分析</li>
+                    <li>行业发展前景</li>
+                    <li>就业市场调研</li>
+                    <li>职业规划建议</li>
+                </ul>
+            </div>
+            
+            <div class="assessment-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-university"></i>
+                <h3>院校选择评估</h3>
+                <ul>
+                    <li>院校排名分析</li>
+                    <li>专业实力评估</li>
+                    <li>录取难度评估</li>
+                    <li>院校特色分析</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline-section">
+        <h2 data-aos="fade-up">规划流程</h2>
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-content">
+                    <h3>初步咨询</h3>
+                    <p>了解学生基本情况和留学意向，提供初步建议和可行性分析。</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-content">
+                    <h3>深度评估</h3>
+                    <p>全面评估学术背景、语言能力、职业规划等，确定留学目标。</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-content">
+                    <h3>方案制定</h3>
+                    <p>根据评估结果，制定个性化留学方案，包括院校选择、专业规划等。</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-content">
+                    <h3>时间规划</h3>
+                    <p>制定详细的时间表，包括语言准备、材料准备、申请时间等。</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-content">
+                    <h3>方案执行</h3>
+                    <p>协助执行留学计划，提供必要的指导和支持。</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-content">
+                    <h3>持续跟进</h3>
+                    <p>定期评估计划执行情况，根据实际情况调整优化方案。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-packages">
+        <h2 data-aos="fade-up">规划套餐</h2>
+        <div class="package-grid">
+            <div class="package-card" data-aos="fade-up">
+                <h3>基础规划套餐</h3>
+                <div class="package-price">¥3,800</div>
+                <ul class="package-features">
+                    <li><i class="fas fa-check"></i> 基础背景评估</li>
+                    <li><i class="fas fa-check"></i> 留学方案建议</li>
+                    <li><i class="fas fa-check"></i> 3所院校推荐</li>
+                    <li><i class="fas fa-check"></i> 基础时间规划</li>
+                </ul>
+                <button class="choose-button">选择套餐</button>
+            </div>
+            
+            <div class="package-card" data-aos="fade-up" data-aos-delay="100">
+                <h3>精英规划套餐</h3>
+                <div class="package-price">¥6,800</div>
+                <ul class="package-features">
+                    <li><i class="fas fa-check"></i> 深度背景评估</li>
+                    <li><i class="fas fa-check"></i> 个性化方案定制</li>
+                    <li><i class="fas fa-check"></i> 5所院校推荐</li>
+                    <li><i class="fas fa-check"></i> 详细时间规划</li>
+                    <li><i class="fas fa-check"></i> 方案优化调整</li>
+                </ul>
+                <button class="choose-button">选择套餐</button>
+            </div>
+            
+            <div class="package-card" data-aos="fade-up" data-aos-delay="200">
+                <h3>VIP规划套餐</h3>
+                <div class="package-price">¥12,800</div>
+                <ul class="package-features">
+                    <li><i class="fas fa-check"></i> 一对一专属顾问</li>
+                    <li><i class="fas fa-check"></i> 全方位方案定制</li>
+                    <li><i class="fas fa-check"></i> 不限院校推荐</li>
+                    <li><i class="fas fa-check"></i> 全程规划指导</li>
+                    <li><i class="fas fa-check"></i> 定期方案调整</li>
+                    <li><i class="fas fa-check"></i> 留学全程咨询</li>
+                </ul>
+                <button class="choose-button">选择套餐</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>联系方式</h3>
+                <div class="footer-contact">
+                    <p><i class="fas fa-phone"></i> +86 13007699901</p>
+                    <p><i class="fas fa-envelope"></i> cczyao@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 河南省安阳市文峰区广厦新苑</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 俄罗斯留学网 版权所有</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html> 
